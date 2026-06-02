@@ -1,0 +1,80 @@
+{
+  "realm": "crack",
+  "enabled": true,
+  "registrationAllowed": true,
+  "loginWithEmailAllowed": true,
+  "roles": {
+    "realm": [
+      {
+        "name": "operator",
+        "description": "Crack App field operator"
+      },
+      {
+        "name": "reviewer",
+        "description": "Crack App manual reviewer"
+      },
+      {
+        "name": "admin",
+        "description": "Crack App administrator"
+      }
+    ]
+  },
+  "clients": [
+    {
+      "clientId": "crack-app-api",
+      "name": "Crack App API",
+      "enabled": true,
+      "protocol": "openid-connect",
+      "bearerOnly": true,
+      "publicClient": false,
+      "standardFlowEnabled": false,
+      "directAccessGrantsEnabled": false
+    },
+    {
+      "clientId": "crack-app-mobile",
+      "name": "Crack App Mobile",
+      "enabled": true,
+      "protocol": "openid-connect",
+      "publicClient": true,
+      "standardFlowEnabled": true,
+      "directAccessGrantsEnabled": true,
+      "implicitFlowEnabled": false,
+      "serviceAccountsEnabled": false,
+      "redirectUris": [
+        "crackapp://auth",
+        "com.jinchuan.crackapp:/oauth2redirect",
+        "com.example.crackapp:/oauth2redirect",
+        "http://localhost/*"
+      ],
+      "webOrigins": [
+        "+"
+      ],
+      "defaultClientScopes": [
+        "web-origins",
+        "acr",
+        "profile",
+        "roles",
+        "email"
+      ],
+      "optionalClientScopes": [
+        "offline_access"
+      ],
+      "attributes": {
+        "pkce.code.challenge.method": "S256"
+      },
+      "protocolMappers": [
+        {
+          "name": "crack-app-api-audience",
+          "protocol": "openid-connect",
+          "protocolMapper": "oidc-audience-mapper",
+          "consentRequired": false,
+          "config": {
+            "included.client.audience": "crack-app-api",
+            "id.token.claim": "false",
+            "access.token.claim": "true"
+          }
+        }
+      ]
+    }
+  ]
+}

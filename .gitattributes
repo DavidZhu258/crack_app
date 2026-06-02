@@ -1,0 +1,42 @@
+* text=auto
+
+*.dart text eol=lf
+*.py text eol=lf
+*.sh text eol=lf
+*.md text eol=lf
+*.yaml text eol=lf
+*.yml text eol=lf
+*.json text eol=lf
+*.xml text eol=lf
+*.kts text eol=lf
+*.gradle text eol=lf
+
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.svg text eol=lf
+
+*.onnx binary
+*.pt binary
+*.ptl binary
+*.pth binary
+*.ckpt binary
+*.safetensors binary
+*.tflite binary
+*.pb binary
+*.om binary
+*.engine binary
+*.weights binary
+*.h5 binary
+*.pkl binary
+*.npz binary
+
+*.apk binary
+*.aab binary
+*.docx binary
+*.jks binary
+*.keystore binary
+*.pem binary
+*.p12 binary

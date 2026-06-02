@@ -1,0 +1,106 @@
+{
+  "cases": [
+    {
+      "name": "granite_dry_598_level",
+      "input": {
+        "rockType": "granite",
+        "indicator1": 1.6702,
+        "indicator2": 49.92,
+        "indicator3": 1.4333,
+        "elevation": 598
+      },
+      "expected": {
+        "input": {
+          "indicator1": "1.670200",
+          "indicator2": "49.920000",
+          "indicator3": "1.433300",
+          "elevation": "598.000000",
+          "ucsMpa": "28.600000"
+        },
+        "scores": {
+          "R1": 2,
+          "R2": 8,
+          "R3": 8,
+          "RMR": "22.000000",
+          "RQD_value": "0.400000",
+          "Jn": "2.000000",
+          "SRF": "7.500000",
+          "Q": "0.008800",
+          "gQ": "29.444827",
+          "groundStressMpa": "29.754000",
+          "S": "0.961215",
+          "hS": "-0.257690",
+          "JCI": "20.314887"
+        }
+      }
+    },
+    {
+      "name": "serpentine_marble_boundary_good",
+      "input": {
+        "rockType": "serpentineMarble",
+        "indicator1": 0.58,
+        "indicator2": 200.0,
+        "indicator3": 0.276,
+        "elevation": 1200
+      },
+      "expected": {
+        "input": {
+          "indicator1": "0.580000",
+          "indicator2": "200.000000",
+          "indicator3": "0.276000",
+          "elevation": "1200.000000",
+          "ucsMpa": "80.000000"
+        },
+        "scores": {
+          "R1": 7,
+          "R2": 17,
+          "R3": 17,
+          "RMR": "45.000000",
+          "RQD_value": "0.850000",
+          "Jn": "9.000000",
+          "SRF": "2.500000",
+          "Q": "0.012467",
+          "gQ": "30.957503",
+          "groundStressMpa": "13.500000",
+          "S": "5.925926",
+          "hS": "11.591343",
+          "JCI": "25.862649"
+        }
+      }
+    },
+    {
+      "name": "mixed_rock_poor",
+      "input": {
+        "rockType": "mixedRock",
+        "indicator1": 2.77,
+        "indicator2": 30.0,
+        "indicator3": 1.571,
+        "elevation": 900
+      },
+      "expected": {
+        "input": {
+          "indicator1": "2.770000",
+          "indicator2": "30.000000",
+          "indicator3": "1.571000",
+          "elevation": "900.000000",
+          "ucsMpa": "25.000000"
+        },
+        "scores": {
+          "R1": 2,
+          "R2": 3,
+          "R3": 3,
+          "RMR": "12.000000",
+          "RQD_value": "0.150000",
+          "Jn": "0.500000",
+          "SRF": "7.500000",
+          "Q": "0.013200",
+          "gQ": "31.205739",
+          "groundStressMpa": "21.600000",
+          "S": "1.157407",
+          "hS": "0.952294",
+          "JCI": "21.378779"
+        }
+      }
+    }
+  ]
+}
