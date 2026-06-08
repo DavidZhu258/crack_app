@@ -99,3 +99,12 @@ python -m compileall -q server\app server\scripts
 
 公开发布前请由项目所有方确认最终开源许可证。本地整理阶段未擅自添加新的
 `LICENSE` 文件。
+
+## Evaluation Evidence
+
+This repository includes a seed-gold evaluation scaffold under `evals/`.
+
+- Plan: [`gold_testset_plan.md`](gold_testset_plan.md)
+- Current results: [`EVAL_RESULTS.md`](EVAL_RESULTS.md)
+- Latest machine-readable validation: [`evals/results/latest_seed_validation.json`](evals/results/latest_seed_validation.json)
+- GitHub Actions: `Eval Seed Validation`

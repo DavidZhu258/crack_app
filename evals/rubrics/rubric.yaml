@@ -1,0 +1,25 @@
+repo: "crack_app"
+eval_type: "mobile_api_workflow"
+schema: "mobile_api_workflow_case.schema.json"
+gold_target: "60"
+scoring:
+  accuracy_weight: 0.70
+  feasibility_weight: 0.30
+  seed_suite_required: true
+  hard_negatives_required: true
+metrics:
+  - workflow_pass_rate
+  - api_correctness
+  - ui_state_correctness
+  - safe_error_rate
+  - fresh_setup_success
+  - p95_latency
+reporting_fields:
+  - run_id
+  - git_commit
+  - dataset_version
+  - accuracy_summary
+  - feasibility_summary
+  - failures
+  - cost
+  - latency
