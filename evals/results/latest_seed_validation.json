@@ -1,0 +1,41 @@
+{
+  "status": "pass",
+  "generated_at": "2026-06-08T17:38:46Z",
+  "repo": "crack_app",
+  "seed_path": "evals\\gold\\seed_gold.jsonl",
+  "seed_case_count": 3,
+  "hard_negative_count": 1,
+  "referenced_file_count": 7,
+  "referenced_files": {
+    "README.md": {
+      "size_bytes": 4002,
+      "sha256": "d925eaa8c1d056c5cb6febe22bac2a9140002cf11bb69d56e4f8d03931059e83"
+    },
+    "docs/OPEN_SOURCE_RELEASE.md": {
+      "size_bytes": 2221,
+      "sha256": "88ecb20b8b89b1e69ff7c6a41cefd14ac708784810cb088faded86998e88a8c6"
+    },
+    "assets/images/test/0_slide.jpg": {
+      "size_bytes": 149673,
+      "sha256": "d9c03fc185fa7dbde1bd66fc28528bdde64bb2683e4a9a07262ead399f6ea21e"
+    },
+    "server/tests/test_api.py": {
+      "size_bytes": 3987,
+      "sha256": "cebe0d55a7d90999ef92e4ca9233a4a19917c492aed114e5af56a6f0e8139cc4"
+    },
+    "server/app/main.py": {
+      "size_bytes": 44031,
+      "sha256": "82b02f8376c815a494bd6f4743994ca9afea3bd1fcf301a29f2d68c9d110a73c"
+    },
+    "assets/models/README.md": {
+      "size_bytes": 505,
+      "sha256": "9d16eff89d3d60e3bfa91aa00999db96192b0079d121f8c8ba00ffaef85433c6"
+    },
+    "MODEL_PREPARATION_GUIDE.md": {
+      "size_bytes": 1666,
+      "sha256": "3dc239ed1cd3b0994a6e9c90d4be4f2ab118c507da876ae399c20f84665910d1"
+    }
+  },
+  "failures": [],
+  "note": "This validates gold seed traceability and feasibility scaffolding; it does not claim model-quality scores yet."
+}
