@@ -34,7 +34,7 @@ dev_dependencies:
     sdk: flutter
   integration_test:
     sdk: flutter
-  mocktail: ^1.0.4
+  mocktail: ^1.0.5
   path_provider_platform_interface: any
   plugin_platform_interface: any
   very_good_analysis: ^10.0.0
